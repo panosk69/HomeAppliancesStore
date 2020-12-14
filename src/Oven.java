@@ -1,4 +1,5 @@
-public class Oven {
+    public class Oven extends Device {
+
     private int mikos;
     private int ypsos;
     private int vathos;
@@ -143,6 +144,6 @@ public class Oven {
             System.out.println(" ");
 
         }
-        private void periodicMantainance(){}
+
 
 }

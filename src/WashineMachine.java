@@ -1,4 +1,4 @@
-public class WashineMachine {
+public class WashineMachine extends Device{
     private  int mikos;
     private  int ypsos;
     private  int vathos;
@@ -146,5 +146,5 @@ public class WashineMachine {
 
     }
 
-    private void periodicMantainance(){}
+
 }

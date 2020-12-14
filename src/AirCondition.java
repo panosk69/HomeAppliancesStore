@@ -1,4 +1,4 @@
-public class AirCondition {
+public class AirCondition extends Device {
     private  int mikos;
     private  int ypsos;
     private  int vathos;
@@ -146,6 +146,6 @@ public AirCondition(
 
     }
 
-    private void periodicMantainance(){}
+
 }
 

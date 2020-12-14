@@ -1,4 +1,4 @@
-public class Fridge {
+public class Fridge extends Device{
     private  int mikos;
     private  int ypsos;
     private  int vathos;
@@ -12,7 +12,6 @@ public class Fridge {
     private  int rafia;
     private  boolean pagomixani;
     static int counter=0;
-
     /*constructors(afti i methodos kalite kata tin dimiourgia tou antikimenou,kai arxikopiei tis times sta pedia tou antikimenou
 ,exei idio onoma me tin klash,den epistrefi pote kapia timi)*/
 
@@ -149,7 +148,7 @@ public class Fridge {
 
     }
 
-    private void periodicMantainance(){}
+
 
 
 }

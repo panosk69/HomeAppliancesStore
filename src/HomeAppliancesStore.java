@@ -3,7 +3,6 @@ import java.awt.print.Printable;
 
 public class HomeAppliancesStore {
 
-
     static String onomaEterias;
     static String diefthinsi;
     static int plithosYpalilwn;
@@ -69,10 +68,39 @@ public class HomeAppliancesStore {
         WM.printWM();
         fridge2.printFridge();
 
+        oven2.powerOff();
+        AC.powerOn();
+        fridge2.powerOn();
+        WM.powerOff();
+
+        deviceStatus(AC);
+
         /*ektiposi sinolikon proionton(h metavliti sinolo pernei tin timi tis metavlitis counter
          ,h counter yparxei se kathe klasi kai metraei ton arithmo twn siskevwn pou dimiourgounte )*/
         int sinolo = oven2.getCounter()+ AC.getCounter()+ WM.getCounter()+ fridge2.getCounter();
         System.out.println("sinolika proionta: "+sinolo);
+
+
+
+
+    }
+
+    public static void deviceStatus(Device d) {
+        System.out.println("i siskevi litourgei?: " + d.status());
+        System.out.println("idos siskevis: ");
+
+        if (d instanceof Oven)
+            System.out.println("Fournos");
+
+        if (d instanceof AirCondition)
+            System.out.println("klimatistiko");
+
+        if (d instanceof WashineMachine)
+            System.out.println("plintirio");
+
+        if (d instanceof Fridge)
+            System.out.println("psigio");
+
 
     }
 
